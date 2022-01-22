@@ -22,7 +22,7 @@ public class WumpusGame : MonoBehaviour {
     public Text info_;
     public Text textMap_;
     public Text help_;
-    public bool finished_;
+    private bool finished_;
 
     /// <summary>
     /// Executes before the program starts
@@ -100,7 +100,6 @@ public class WumpusGame : MonoBehaviour {
                 playerY_ = posY;
             }
             else {
-                Debug.Log("(" + playerX_ + ", " + playerY_ + ") = " + map_[playerX_, playerY_]);
                 finished_ = true;
             }
         }
