@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Button : MonoBehaviour {
     bool opened_ = false;
+    private WumpusGame player_;
     // Start is called before the first frame update
     void Start () {
         
@@ -19,19 +20,19 @@ public class Button : MonoBehaviour {
     =====================================*/
     
     public void InfoButtonNorth () {
-        Debug.Log("Button for Next room: ...");
+        //Debug.Log("Button for Next room: ...");
     }
 
     public void InfoButtonSouth () {
-        Debug.Log("Button for Next room: ...");
+        //Debug.Log("Button for Next room: ...");
     }
 
     public void InfoButtonWest () {
-        Debug.Log("Button for Next room: ...");
+        //Debug.Log("Button for Next room: ...");
     }
 
     public void InfoButtonEast () {
-        Debug.Log("Button for Next room: ...");
+        //Debug.Log("Button for Next room: ...");
     }
     
     /*=====  End of Pointer Enter  ======*/
@@ -44,21 +45,29 @@ public class Button : MonoBehaviour {
     public void ClickButtonNorth () {
         opened_ = true;
         Debug.Log("ClickBotonNorte");
+        player_ = GameObject.Find("XRRig").GetComponent<WumpusGame>();
+        player_.movePlayer("North");
     }
 
     public void ClickButtonSouth () {
         opened_ = true;
         Debug.Log("ClickBotonSur");
+        player_ = GameObject.Find("XRRig").GetComponent<WumpusGame>();
+        player_.movePlayer("South");
     }
 
     public void ClickButtonWest () {
         opened_ = true;
         Debug.Log("ClickBotonOeste");
+        player_ = GameObject.Find("XRRig").GetComponent<WumpusGame>();
+        player_.movePlayer("West");
     }
 
     public void ClickButtonEast () {
         opened_ = true;
         Debug.Log("ClickBotonEste");
+        player_ = GameObject.Find("XRRig").GetComponent<WumpusGame>();
+        player_.movePlayer("East");
     }
     
     /*=====  End of Pointer Click  ======*/
@@ -71,15 +80,16 @@ public class Button : MonoBehaviour {
     public void CloseButtonNorth () {
         if (opened_) {
             opened_ = false;
-            Debug.Log("FinBotonNorte");
+            //Debug.Log("FinBotonNorte");
         }
+
         
     }
 
     public void CloseButtonSouth () {
         if (opened_) {
             opened_ = false;
-            Debug.Log("FinBotonSur");
+            //Debug.Log("FinBotonSur");
         }
         
     }
@@ -87,7 +97,7 @@ public class Button : MonoBehaviour {
     public void CloseButtonWest () {
         if (opened_) {
             opened_ = false;
-            Debug.Log("FinBotonOeste");
+            //Debug.Log("FinBotonOeste");
         }
         
     }
@@ -95,7 +105,7 @@ public class Button : MonoBehaviour {
     public void CloseButtonEast () {
         if (opened_) {
             opened_ = false;
-            Debug.Log("FinBotonEste");
+            //Debug.Log("FinBotonEste");
         }
         
     }
