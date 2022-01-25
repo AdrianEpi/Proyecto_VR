@@ -13,7 +13,6 @@ public class RotateSky : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        Debug.Log("ROTA");
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * rotateSpeed);
     }
 }

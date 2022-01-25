@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// public delegate void eventDoor();
+// public delegate bool detectClickButton();
+
+
 /// <summary>
 /// This class describes a wumpus game.
 /// </summary>
