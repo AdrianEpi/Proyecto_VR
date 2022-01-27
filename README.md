@@ -96,6 +96,14 @@ de la partida "Game Over".
 
 ## Ejecución
 
+Ejecucion en Windows: 
+
+![foo](https://github.com/AdrianEpi/Proyecto_VR/blob/master/Ejecucion_PC.gif)
+
+Ejecucion en Adroid:
+
+![foo](https://github.com/AdrianEpi/Proyecto_VR/blob/master/Ejecucion_Movil.gif)
+
 ## Acta de los acuerdos del grupo
 
 La mayor parte de las tareas se han llevado de forma conjunta mediante el uso de
