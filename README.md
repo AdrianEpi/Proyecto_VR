@@ -50,9 +50,9 @@ siguientes valores o datos:
 
 * 0: Casilla vacía.
 * 1: Casilla con jugador.
-* 2. Casilla con agujero.
-* 3. Casilla con Wumpus.
-* 4. Casilla con tesoro.
+* 2: Casilla con agujero.
+* 3: Casilla con Wumpus.
+* 4: Casilla con tesoro.
 * -1: Límite exterior del mapa.
 
 En primer lugar, cuando se ejecuta el juego se generará un mapa de las
